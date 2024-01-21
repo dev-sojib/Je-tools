@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+#container {
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 242);
+    position: relative;
+    overflow: hidden;
+
+}
+
+#container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#container i {
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: all ease 0.4s;
+}
