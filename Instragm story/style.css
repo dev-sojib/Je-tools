@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.864);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 800px;
+    width: 450px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.storiyan {
+    height: 105px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.327);
+    padding: 20px 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.storiyan::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(purple, orange);
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#fullScreen {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    background-repeat: no-repeat;
+    transition: all ease-in 0.4s;
+}
+
+#fullScreen span {
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    z-index: 9;
+    color: white;
+    cursor: pointer;
+}
